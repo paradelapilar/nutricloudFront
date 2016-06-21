@@ -397,6 +397,13 @@ a.modal-action.modal-close.green-nutri.btn-flat {
     color: #3D8708;
     font-weight: 700 !important;
 }
+.checkusr {
+        text-align: left;
+        padding-left: 25px;
+}
+.checkusr label{
+        color: #212121 !important;
+}
 
 
 /*  Home  */
@@ -635,7 +642,26 @@ select:focus {
     color: gray;
 }
 
-
+/*Registro*/
+.fecha input[type=date]{
+    color: #9E9C9B !important;
+}
+.fecha-label{
+    top: -11px !important;
+}
+.register-form{
+    padding-left:30px;
+}
+.drag-target {
+     width: 7% !important;
+}
+.terminos{
+    padding-left:25px;
+    padding-top: 25px;
+}
+.btn-registro{
+    padding-left:25px;
+}
 
     
 
