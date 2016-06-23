@@ -120,6 +120,10 @@ nav .brand-logo{
        color: #3D8708;
         font-size: 30px;
 }
+.card .card-reveal{
+    background-color: rgba(19, 56, 0, 0.85) !important;
+    color: white !important;
+}
 
 .in{font-weight: 400 !important; font-style: normal !important;}
 
@@ -394,8 +398,10 @@ a.modal-action.modal-close.green-nutri.btn-flat {
 .icon-plus{
     margin-left: 15px;
     margin: 5px;
-    color: #3D8708;
     font-weight: 700 !important;
+}
+.icon-plus:hover {
+    color: orange;
 }
 .checkusr {
         text-align: left;
@@ -424,7 +430,19 @@ a.modal-action.modal-close.green-nutri.btn-flat {
      border: solid 1px rgba(212, 212, 212, 0.56);
      padding: 20px;
 }
-
+.action-home{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    background: rgba(61, 135, 8, 0.85) !important;
+}
+.action-home a{
+    color: white !important;
+}
+.icon-food{
+        width: 4%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 .alimento::after{
     content: "-";
     margin-left: 6px;
@@ -493,10 +511,9 @@ a.modal-action.modal-close.green-nutri.btn-flat {
 .card-content h4{
         color: #272727 !important;
         font-size: 26px !important;
+        display:inline-block !important;
 }
-.card a{
-    color: #3D8708 !important;
-}
+
 .list-food .card .card-content{
         padding: 0px !important;
     padding-left: 20px !important;

@@ -137,10 +137,15 @@
     <Content Include="Content\img\card2.jpg" />
     <Content Include="Content\img\card3.jpg" />
     <Content Include="Content\img\card4.jpg" />
+    <Content Include="Content\img\coffee.png" />
+    <Content Include="Content\img\dinner.png" />
+    <Content Include="Content\img\healthy-breakfast.png" />
     <Content Include="Content\img\keyboard-right-arrow-button.png" />
     <Content Include="Content\img\left-arrow-angle.png" />
     <Content Include="Content\img\logo.png" />
+    <Content Include="Content\img\oatmeal.png" />
     <Content Include="Content\img\responsive.png" />
+    <Content Include="Content\img\salad-bowl.png" />
     <Content Include="Content\img\seccionFood.jpg" />
     <Content Include="Content\img\sectionHeader.jpg" />
     <Content Include="Content\jquery-ui.css" />

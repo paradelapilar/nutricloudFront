@@ -5,6 +5,4 @@
 *.csproj.webinfo
 *.vbproj.webinfo
 
-
 # archivos de configuracion
-*.config
