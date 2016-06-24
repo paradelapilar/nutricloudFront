@@ -1,2 +1,57 @@
 ﻿@model nutricloud_web.Models.SignInViewModel
+@using (Html.BeginForm("SignIn", "Index", FormMethod.Post))
+{
+    <div class="col l4 m12 s12 pcipal-index">
+        <div class="row nobottom">
+            <div class="col s12">
+                <div class="input-field mtop col s12">
+                    
+                    @Html.TextBoxFor(m => m.Email, new { @type = "email", @class = "validate" })
+                    @Html.LabelFor(m => m.Email, new { @for = "email", data_error = "wrong", data_succes = "success" })
 
+                    @*<input id="email" type="text" class="validate">*@
+                    @*<label for="email">Email</label>*@
+
+                </div><!--/.input-->
+            </div><!--/.col s12-->
+        </div><!--/.row-->
+        <div class="row nobottom">
+            <div class="col s12">
+                <div class="input-field col s12">
+                    
+                    @Html.TextBoxFor(m => m.Password1, new { @type = "password", @class = "validate" })
+                    @Html.LabelFor(m => m.Password1, new { @for = "Password1", data_error = "wrong", data_succes = "success" })
+                    
+                    @*<input id="last_name" type="password" class="validate">*@
+                    @*<label for="last_name">Contraseña</label>*@
+
+                </div><!--/.input-->
+            </div><!--/.col s12-->
+        </div><!--/.row-->
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field col s12">
+                
+                    @Html.TextBoxFor(m => m.Password2, new { @type = "password", @class = "validate" })
+                    @Html.LabelFor(m => m.Password2, new { @for = "Password2", data_error = "wrong", data_succes = "success" })
+
+                    @*<input id="last_name" type="password">*@
+                    @*<label for="last_name">Repita Contraseña</label>*@
+
+                </div><!--/.input-->
+            </div><!--/.col s12-->
+        </div><!--/.row-->
+        <div class="row checkusr">
+
+            <input class="with-gap" name="TipoUsuario" type="radio" id="regular" />
+            <label for="regular">Soy un usuario regular.</label>
+
+            <input class="with-gap" name="TipoUsuario" type="radio" id="profesional" />
+            <label for="profesional">Soy un profesional de la nutrición.</label>
+
+        </div>
+        <div class="row">
+            <button class="btn waves-effect green-nutri" type="submit" name="action">Registrarse</button>
+        </div><!--/.row-->
+    </div><!--/.col5-->
+}
