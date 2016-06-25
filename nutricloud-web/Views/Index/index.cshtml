@@ -1,4 +1,6 @@
-﻿@{
+﻿@using nutricloud_web.Models
+@model LogInViewModel 
+@{
     Layout = null;
 }
 
@@ -64,36 +66,8 @@
                                     <li><a href="#work">Comunidad</a></li>
                                     <li><a href="#contact">Nosotros</a></li>
                                     <li>
-                                        <a class="modal-trigger" href="#modal1">Iniciar Sesión</a>
-                                        <!-- Modal -->
-                                        <div id="modal1" class="modal modal-fixed-footer">
-                                            <div class="modal-content">
-                                                <h4>Iniciar Sesión</h4>
-                                                <div class="row">
-                                                    <form class="col s12">
-                                                        <div class="row">
-                                                            <div class="col s12">
-                                                                <div class="input-field col s12">
-                                                                    <input id="email" type="email" class="validate">
-                                                                    <label for="email" data-error="wrong" data-success="right">Email</label>
-                                                                </div><!--/.input-->
-                                                            </div><!--/.col s12-->
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col s12">
-                                                                <div class="input-field col s12">
-                                                                    <input id="password" type="password" class="validate">
-                                                                    <label for="password" data-error="wrong" data-success="right">Contraseña</label>
-                                                                </div><!--/.input-->
-                                                            </div><!--/.col s12-->
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <a href="#!" class="modal-action modal-close green-nutri btn-flat ">Ingresar</a>
-                                            </div>
-                                        </div>
+                                        @* Formulario LogIn *@
+                                        @Html.Partial("~/Views/Index/_LogIn.cshtml");
                                     </li>
                                 </ul>
                                 <a href="#" data-activates="nav-mobile" class="button-collapse">
@@ -111,41 +85,10 @@
                             </h1>
                             <h4>La aplicación que te ayuda a alimentarte bien y lograr tu peso ideal.</h4>
                         </div><!--/.col7-->
-                        <div class="col l4 m12 s12 pcipal-index">
-                            <div class="row nobottom">
-                                <div class="col s12">
-                                    <div class="input-field mtop col s12">
-                                        <input id="email" type="text" class="validate">
-                                        <label for="email">Email</label>
-                                    </div><!--/.input-->
-                                </div><!--/.col s12-->
-                            </div><!--/.row-->
-                            <div class="row nobottom">
-                                <div class="col s12">
-                                    <div class="input-field col s12">
-                                        <input id="last_name" type="password" class="validate">
-                                        <label for="last_name">Contraseña</label>
-                                    </div><!--/.input-->
-                                </div><!--/.col s12-->
-                            </div><!--/.row-->
-                            <div class="row">
-                                <div class="col s12">
-                                    <div class="input-field col s12">
-                                        <input id="last_name" type="password">
-                                        <label for="last_name">Repita Contraseña</label>
-                                    </div><!--/.input-->
-                                </div><!--/.col s12-->
-                            </div><!--/.row-->
-                            <div class="row checkusr">
-                                <input class="with-gap" name="group1" type="radio" id="usuario" />
-                                <label for="usuario">Soy un usuario regular.</label>
-                                <input class="with-gap" name="group1" type="radio" id="prof" />
-                                <label for="prof">Soy un profesional de la nutrición.</label>
-                             </div>
-                            <div class="row">
-                                <button class="btn waves-effect green-nutri" type="submit" name="action">Registrarse</button>
-                            </div><!--/.row-->
-                        </div><!--/.col5-->
+                        
+                       @* Formulario de SignIn *@
+                       @Html.Partial("~/Views/Index/_SignIn.cshtml")
+
                     </div><!--/.row-->
                 </div><!--/.container-->
             </div><!--/.section no-pad-bot ptop-->

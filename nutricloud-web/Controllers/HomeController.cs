@@ -13,5 +13,11 @@ namespace nutricloud_web.Controllers
         {
             return View();
         }
+
+        // GET: Home
+        public ActionResult Hola()
+        {
+            return View();
+        }
     }
 }
