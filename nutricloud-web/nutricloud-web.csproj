@@ -174,14 +174,10 @@
     <Compile Include="Controllers\BuscadorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IndexController.cs" />
-    <Compile Include="Controllers\MuroController.cs" />
-    <Compile Include="Controllers\PerfilController.cs" />
     <Compile Include="Controllers\RegistroController.cs" />
-    <Compile Include="Controllers\ReportesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\IndexViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -202,11 +198,6 @@
     <Content Include="Views\Buscador\buscador.cshtml" />
     <Content Include="Views\Alimento\Alimento.cshtml" />
     <Content Include="Views\Registro\Registro.cshtml" />
-    <Content Include="Views\Perfil\Perfil.cshtml" />
-    <Content Include="Views\Muro\Muro.cshtml" />
-    <Content Include="Views\Reportes\Reportes.cshtml" />
-    <Content Include="Views\Index\_LogIn.cshtml" />
-    <Content Include="Views\Index\_SignIn.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -218,6 +209,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\font\roboto\" />
     <Folder Include="Content\img\icon\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
