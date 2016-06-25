@@ -15,7 +15,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="../../scripts/modernizr.js"></script>
-
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300|Righteous' rel='stylesheet' type='text/css'>
 
@@ -58,13 +57,20 @@
                             <img src="../../content/img/logo.png">nutricloud
                         </a>
                         <ul id="nav-mobile" class="right side-nav">
-                            <li><a href="#"><span class="user">User</span></a></li>
+                            <li>
+                            @Html.ActionLink("Diario", "Home","Home")
+                            </li>
+                            <li>@Html.ActionLink("Alimentos", "Alimento", "Alimento")</li>                           </li>
+                            <li>@Html.ActionLink("Reportes", "Reportes", "Reportes")</li>
+                            <li>@Html.ActionLink("Blog", "Blog", "Blog")</li>
+                            <li>@Html.ActionLink("Muro", "Muro", "Muro")</li>
+                            <li>@Html.ActionLink("Profesionales", "Profesional", "Profesional")</li>
+                            <li>@Html.ActionLink("User", "Perfil", "Perfil")</li>
                             <li><a href="#">
                                 <i class="material-icons sobre">markunread</i>
                                 <div class="number">2</div>
                                 </a>
                             </li>
-                            <li><a href="#contact">Comunidad</a></li>
                             <li><a href="#">Cerrar Sesión</a></li>
                         </ul>
                         <a href="#" data-activates="nav-mobile" class="button-collapse">

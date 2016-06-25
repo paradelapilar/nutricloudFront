@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace nutricloud_web.Controllers
 {
-    public class HomeController : Controller
+    public class MuroController : Controller
     {
-        // GET: Home
-        public ActionResult Home()
+        // GET: Muro
+        public ActionResult Muro()
         {
             return View();
         }

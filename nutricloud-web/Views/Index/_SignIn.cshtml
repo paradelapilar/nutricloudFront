@@ -5,7 +5,7 @@
         <div class="row nobottom">
             <div class="col s12">
                 <div class="input-field mtop col s12">
-                    
+
                     @Html.TextBoxFor(m => m.Email, new { @type = "email", @class = "validate" })
                     @Html.LabelFor(m => m.Email, new { @for = "email", data_error = "wrong", data_succes = "success" })
 
@@ -18,10 +18,10 @@
         <div class="row nobottom">
             <div class="col s12">
                 <div class="input-field col s12">
-                    
+
                     @Html.TextBoxFor(m => m.Password1, new { @type = "password", @class = "validate" })
                     @Html.LabelFor(m => m.Password1, new { @for = "Password1", data_error = "wrong", data_succes = "success" })
-                    
+
                     @*<input id="last_name" type="password" class="validate">*@
                     @*<label for="last_name">Contraseña</label>*@
 
@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col s12">
                 <div class="input-field col s12">
-                
+
                     @Html.TextBoxFor(m => m.Password2, new { @type = "password", @class = "validate" })
                     @Html.LabelFor(m => m.Password2, new { @for = "Password2", data_error = "wrong", data_succes = "success" })
 

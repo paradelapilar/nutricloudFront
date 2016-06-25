@@ -16,15 +16,13 @@ namespace nutricloud_web.Controllers
         }
 
         [HttpPost]
-        //[ValidateAntiForgeryToken]
         public ActionResult LogIn([Bind(Include = "Email,Password")] LogInViewModel model)
         {
             // logica de negocios
-            return null;
+            return RedirectToAction("Home","Home");
         }
 
         [HttpPost]
-        //[ValidateAntiForgeryToken]
         public ActionResult SignIn([Bind(Include = "Email,Password1,Password2,TipoUsuario")] SignInViewModel model)
         {
             // logica de negocios
