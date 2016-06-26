@@ -13,7 +13,7 @@
                         <div class="input-field col s12">
 
                             @Html.TextBoxFor(m => m.Email, new { @type = "email", @class = "validate" })
-                            @Html.LabelFor(m => m.Email, new { @for = "email", data_error = "wrong", data_succes = "success" })
+                            @Html.LabelFor(m => m.Email, "Email", new { @for = "email", data_error = "wrong", data_succes = "success" })
 
                             @*<input id="Email" type="email" class="validate">*@
                             @*<label for="email" data-error="wrong" data-success="right">Email</label>*@
@@ -26,7 +26,7 @@
                         <div class="input-field col s12">
 
                             @Html.TextBoxFor(m => m.Password, new { @type = "password", @class = "validate" })
-                            @Html.LabelFor(m => m.Password, new { @for = "password", data_error = "wrong", data_succes = "success" })
+                            @Html.LabelFor(m => m.Password, "Contraseña", new { @for = "password", data_error = "wrong", data_succes = "success" })
 
                             @*<input id="Password" type="password" class="validate">*@
                             @*<label for="Password" data-error="wrong" data-success="right">Contraseña</label>*@

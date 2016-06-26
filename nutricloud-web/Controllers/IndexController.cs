@@ -15,11 +15,18 @@ namespace nutricloud_web.Controllers
             return View();
         }
 
-        [HttpPost]
-        public ActionResult LogIn([Bind(Include = "Email,Password")] LogInViewModel model)
+        //[HttpPost]
+        //public ActionResult LogIn([Bind(Include = "Email,Password")] LogInViewModel model)
+        //{
+        //    // logica de negocios
+        //    return RedirectToAction("Home","Home");
+        //}
+
+        
+        public ActionResult LogIn(LogInViewModel model)
         {
             // logica de negocios
-            return RedirectToAction("Home","Home");
+            return RedirectToAction("Home", "Home");
         }
 
         [HttpPost]

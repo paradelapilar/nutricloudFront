@@ -7,7 +7,7 @@
                 <div class="input-field mtop col s12">
 
                     @Html.TextBoxFor(m => m.Email, new { @type = "email", @class = "validate" })
-                    @Html.LabelFor(m => m.Email, new { @for = "email", data_error = "wrong", data_succes = "success" })
+                    @Html.LabelFor(m => m.Email, "Email", new { @for = "email", data_error = "wrong", data_succes = "success" })
 
                     @*<input id="email" type="text" class="validate">*@
                     @*<label for="email">Email</label>*@
@@ -20,7 +20,7 @@
                 <div class="input-field col s12">
 
                     @Html.TextBoxFor(m => m.Password1, new { @type = "password", @class = "validate" })
-                    @Html.LabelFor(m => m.Password1, new { @for = "Password1", data_error = "wrong", data_succes = "success" })
+                    @Html.LabelFor(m => m.Password1, "Contraseña", new { @for = "Password1", data_error = "wrong", data_succes = "success" })
 
                     @*<input id="last_name" type="password" class="validate">*@
                     @*<label for="last_name">Contraseña</label>*@
@@ -33,7 +33,7 @@
                 <div class="input-field col s12">
 
                     @Html.TextBoxFor(m => m.Password2, new { @type = "password", @class = "validate" })
-                    @Html.LabelFor(m => m.Password2, new { @for = "Password2", data_error = "wrong", data_succes = "success" })
+                    @Html.LabelFor(m => m.Password2, "Repita contraseña", new { @for = "Password2", data_error = "wrong", data_succes = "success" })
 
                     @*<input id="last_name" type="password">*@
                     @*<label for="last_name">Repita Contraseña</label>*@
