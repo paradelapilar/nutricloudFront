@@ -1,9 +1,0 @@
-# archivos de proyecto
-*.vbproj.user
-*.csproj.user
-*.suo
-*.csproj.webinfo
-*.vbproj.webinfo
-
-# archivos de configuracion
-*.config
